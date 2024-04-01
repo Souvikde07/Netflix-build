@@ -26,12 +26,11 @@ function Banner() {
         return string?.length > n ? string.substr(0,n-1) + '...' : string;
     }
   return (
-    <header 
+    <header
         className='banner'
         style={{
             backgroundSize: "cover",
-            backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.
-            backdrop_path}")`,
+            backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
             backgroundPosition: "center center",
         }}
     >
