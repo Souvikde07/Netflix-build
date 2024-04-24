@@ -9,7 +9,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: !user ? <LoginScreen /> : <HomeScreen/>,
+      element: !user ? <LoginScreen /> : <HomeScreen />,
     },
   ]);
   return (
