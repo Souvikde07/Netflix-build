@@ -54,7 +54,11 @@
     font-size: 1.3rem;
     font-weight: 400;
 }
-
+.loginScreen_flexBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .loginScreen_body{
     position: absolute;
     top: 30%;
@@ -64,6 +68,8 @@
     z-index: 1;
     color: #fff;
     padding: 20px;
+    left: 0;
+    right: 0;
 }
 
 .loginScreen_input > form > input{
