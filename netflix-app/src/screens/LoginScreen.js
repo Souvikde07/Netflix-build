@@ -14,7 +14,7 @@ function LoginScreen() {
             src = "https://www.freepnglogos.com/uploads/netflix-socks-png-18.png"
             alt = ""
           />
-          <button onClick={() => setSignIn(true)} 
+          <button onClick={() => setSignIn(true)}
           className='loginScreen_button'>
             Sign In</button>
           <div className='loginScreen_gradient'/>
