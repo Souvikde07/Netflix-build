@@ -24,7 +24,9 @@ function Nav() {
             
             className={`nav ${show && "nav__black"}`}>
             <div className='nav__contents'>
-                <img className='nav__logo'
+                <img
+                    onClick={()=> navigate("/")}
+                    className='nav__logo'
                     src="https://www.freepnglogos.com/uploads/netflix-socks-png-18.png"
                     alt=""
                 />

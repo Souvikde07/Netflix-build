@@ -12,6 +12,7 @@ import ProfileScreen from './screens/ProfileScreen';
 function App() {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
+
   useEffect(()=>{
     const unsubscibe = auth.onAuthStateChanged(userAuth => {
       if(userAuth){
@@ -27,9 +28,7 @@ function App() {
       }
     });
     return unsubscibe;
-  },[dispatch]);
-
-  const isLoading = !user; // Flag to indicate loading state
+  }, [dispatch]);
 
   const router = createBrowserRouter([
     {
@@ -43,11 +42,7 @@ function App() {
   ]);
   return (
     <div className="App">
-      {isLoading ?(
-        <div>Loading...</div>
-      ):(
-        <RouterProvider router= {router}/>
-      )}
+      <RouterProvider router= {router}/>
     </div>
   );
 }
