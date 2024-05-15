@@ -24,12 +24,22 @@ function App() {
       );
       } else{
         //Logged out
+        auth.signOut();
         dispatch(logout());
       }
     });
     return unsubscibe;
   }, [dispatch]);
 
+  const handleSignOut = () => {
+    auth.signOut()
+      .then(() => {
+        dispatch(logout()); // Dispatch logout action to update Redux state
+      })
+      .catch(error => {
+        console.error("Error signing out:", error);
+      });
+  };
   const router = createBrowserRouter([
     {
       path: '/',
@@ -37,7 +47,11 @@ function App() {
     },
     {
       path:'/profile',
-      element: <ProfileScreen />
+      element: user ? (
+        <ProfileScreen onSignOut={handleSignOut} /> // Pass signout function as a prop
+      ) : (
+        <LoginScreen /> // Redirect to login if not authenticated
+      ),
     },
   ]);
   return (
