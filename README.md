@@ -1,5 +1,5 @@
 # Netflix-build
-### This is a fully functional Netflix Clone made from Scratch using React, Redux and Firebase. 
+### This is a fully functional Netflix Clone made from scratch using React, Redux and Firebase. 
 #### This is a Full-stack Development Project which has been created solely for education and learning purposes. 
 Creating an application like this, provides indepth knowledge on how to integrate frontend with serverless backend. 
 Firebase, with its functionalities acts as a Backend as a service. 
