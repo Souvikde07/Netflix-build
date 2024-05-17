@@ -1,5 +1,26 @@
 # Netflix-build
-Project to create Netflix from Scratch using React.js
+### This is a fully functional Netflix Clone made from Scratch using React, Redux and Firebase. 
+#### This is a Full-stack Development Project which has been created solely for education and learning purposes. 
+Creating an application like this, provides indepth knowledge on how to integrate frontend with serverless backend. 
+Firebase, with its functionalities acts as a Backend as a service. 
+Integrating Stripe for payment options provides exposure on how realtime payment systems work. 
+Developing a project of this magnitude gives immense knowledge on the different changes needed to be made specifically for the production environment over the local environment.
+
+
+### The Application has been hosted on this link : (Please Check it out)
+-       https://netflix-build-d0a29.web.app/
+ 
+## **Development**
+
+### Tech Stack used for the development of this project are as follows: 
+- Frontend : React and Redux(for state management)
+- Backend : Serverless (Inegrated with Firebase)
+
+Things used within Firebase : 
+  - Hosting : Firebase Hosting
+  - Database : Cloud Firestore
+  - Authentication : Firebase Authentication
+  - Extensions : Run Payments with Stripe        
 
 ## **Deploying in Firebase**
 
